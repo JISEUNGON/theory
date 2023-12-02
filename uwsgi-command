@@ -1,0 +1,191 @@
+
+  sudo apt-get install nginx
+  sudo apt-get update 
+  sudo apt-get dist-upgrade 
+  sudo apt-get install nginx
+  sudo apt-get install uwsgi
+  ps -eaf | grep nginx
+  ps -eaf | grep uwsgi
+  sudo vi /etc/uwsgi/apps-available/README
+    sudo vi /etc/uwsgi/apps-enabled/README 
+    sudo vi /etc/default/uwsgi 
+    sudo vi /etc/uwsgi/apps-available/mjubackend
+    sudo ln -s /etc/uwsgi/apps-available/mjubackend /etc/uwsgi/apps-enabled/
+    mkdir mjubackend
+    cd mjubackend/
+    ls
+    vi flask.py
+    vi ~/.vimrc
+    vi flask.py
+    ls -la
+    sudo vi /etc/uwsgi/apps-enabled/mjubackend 
+    sudo systemctl enable uwsgi-app@mjubackend
+    ps -eaf | grep uwsgi
+    vi /lib/systemd/system/uwsgi-app@.service 
+    sudo systemctl enable uwsgi-app@mjubackend
+    sudo vi /lib/systemd/system/uwsgi-app@.service 
+    sudo systemctl enable uwsgi-app@mjubackend
+    sudo systemctl start uwsgi-app@mjubackend.service 
+    journalctl -xeu uwsgi-app@mjubackend.service
+    cd /etc/uwsgi/
+    ls
+    cd apps-available/
+    ls
+    ls -la
+    sudo mv mjubackend mjubackend.ini
+    cd ..
+    cd apps-enabled/
+    ls
+    sudo rm mjubackend 
+    sudo ln -s /etc/uwsgi/apps-available/mjubackend.ini 
+    ls
+    sudo systemctl enable uwsgi-app@mjubackend
+    sudo systemctl start uwsgi-app@mjubackend.service 
+    journalctl -xeu uwsgi-app@mjubackend.service
+    cd
+    ls -la
+    sudo vi /lib/systemd/system/uwsgi-app@.service 
+    sudo systemctl daemon-reload 
+    sudo systemctl enable uwsgi-app@mjubackend
+    sudo systemctl start uwsgi-app@mjubackend
+    journalctl -xeu uwsgi-app@mjubackend.service
+    ls
+    sudo vi /lib/systemd/system/uwsgi-app@.service 
+    sudo systemctl daemon-reload 
+    sudo systemctl start uwsgi-app@mjubackend
+    ps -eaf | grep uwsgi
+    ls
+    sudo vi /etc/nginx/nginx.conf 
+    sudo vi /etc/nginx/sites-enabled/default 
+    sudo systemctl restart nginx
+    sudo ufw status
+    netstat -an | grep 10001
+    sudo apt-get install net-tools
+    ifconfig
+    netstat -an | grep 10001
+    sudo vi /var/log/nginx/error.log 
+    cd /var/log/uwsgi/
+    ls
+    cd app/
+    ls
+    ls -la
+    cd ..
+    ls
+    ps -eaf | grep uwsgi
+    vi /etc/uwsgi/apps-available/mjubackend.ini 
+    sudo vi /etc/uwsgi/apps-available/mjubackend.ini 
+    sudo systemctl restart uwsgi-app@mjubackend.service 
+    ps -eaf | grep uwsgi
+    ls
+    sudo systemctl stop uwsgi-app@mjubackend.service 
+    /usr/bin/uwsgi --ini /etc/uwsgi/apps-available/mjubackend.ini
+    apt-cache search uwsgi | grep python3
+    sudo apt-get install uwsgi-plugin-python3 
+    /usr/bin/uwsgi --ini /etc/uwsgi/apps-available/mjubackend.ini
+    sudo pip install flask
+    sudo python3 -m pip install flask
+    sudo apt-cache search pip
+    sudo apt-cache search pip | grep python
+    sudo apt-get install python3-pip
+    pip
+    sudo pip install flask
+    sudo pip install flask-jinja2
+    sudo pip install jinja2
+    /usr/bin/uwsgi --ini /etc/uwsgi/apps-available/mjubackend.ini
+    sudo pip install -U Flask
+    flask run
+    python3
+    cd
+    ls
+    cd mjubackend/
+    ls
+    mv flask.py my_flask.py
+    ls
+    mv my_flask.py memo.py
+    ls
+    sudo systemctl disable uwsgi-app@mjubackend
+    cd /etc/uwsgi/apps-available/
+    ls
+    sudo mv mjubackend.ini memo.ini
+    sudo vi memo.ini 
+    cd ..
+    ls
+    cd apps-enabled/
+    ls
+    sudo rm mjubackend.ini 
+    sudo ln -s /etc/uwsgi/apps-available/memo.ini 
+    ls
+    sudo systemctl disable uwsgi-app@mjubackend
+    sudo systemctl enable uwsgi-app@memo
+    /usr/bin/uwsgi --ini /etc/uwsgi/apps-available/memo.ini
+    sudo vi /etc/nginx/
+    sudo vi /etc/nginx/nginx.conf 
+    sudo vi /etc/nginx/sites-enabled/default 
+    sudo shutdown -r now
+    sudo netstat -pant
+    ls
+    cd mjubackend/
+    ls
+    vi memo.py 
+    vi flask.py
+    vi memo.py 
+    sudo systemctl restart uwsgi-app@memo.service 
+    sudo vi /var/log/nginx/error.log 
+    sudo vi /var/log/nginx/access.log 
+    sudo vi /etc/nginx/sites-enabled/default 
+    sudo systemctl restart nginx
+    journalctl -xeu nginx.service
+    ls
+    sudo vi /etc/nginx/sites-enabled/default 
+    sudo vi /etc/uwsgi/apps-enabled/memo.ini 
+    sudo systemctl restart nginx uwsgi-app@memo.service 
+    sudo vi /etc/uwsgi/apps-enabled/memo.ini 
+    ps -eaf | grep uwsgi
+    sudo systemctl stop uwsgi-app@memo.service 
+    /usr/bin/uwsgi --ini /etc/uwsgi/apps-available/memo.ini
+    vi memo.py 
+    /usr/bin/uwsgi --ini /etc/uwsgi/apps-available/memo.ini
+    vi memo.py 
+    /usr/bin/uwsgi --ini /etc/uwsgi/apps-available/memo.ini
+    vi memo.py 
+    /usr/bin/uwsgi --ini /etc/uwsgi/apps-available/memo.ini
+    sudo shutdown -r now
+    ls
+    exit
+    ps -eaf | grep uwsgi
+    vi .ssh/authorized_keys 
+    sudo vi /etc/ssh/sshd_config
+    sudo systemctl restart sshd
+    ls
+    cat authorized_keys.add >> .ssh/authorized_keys 
+    ls
+    mv authorized_keys.add .ssh/
+    ls
+    vi .ssh/authorized_keys
+    ls
+    cd mjubackend/
+    ls
+    vi memo.py 
+    sudo pip install urllib
+    sudo systemctl restart uwsgi-app@memo.service 
+    ps -eaf | grep uwsgi
+    sudo systemctl stop uwsgi-app@memo.service 
+    /usr/bin/uwsgi --ini /etc/uwsgi/apps-available/memo.ini
+    vi memo.py 
+    /usr/bin/uwsgi --ini /etc/uwsgi/apps-available/memo.ini
+    vi memo.py 
+    /usr/bin/uwsgi --ini /etc/uwsgi/apps-available/memo.ini
+    cat memo.py 
+    curl http://169.254.169.254/latest/meta-data/local-ipv4
+    sudo systemctl restart uwsgi-app@memo.service
+    
+Sofiles found in this directory are processed by uWSGI init.d script as
+uW configuration files.
+
+On system boot for each configuration file new uWSGI daemon instance is started
+with additional option. Name of this option is based on configuration file
+extension. Path to configuration files is passed as option value.
+
+See more detailed information at:
+  * /usr/share/doc/uwsgi/README.Debian.gz
+  * /etc/default/uwsgic
